@@ -92,9 +92,9 @@
 				E2DFB36E16E1B54E0092C852 /* AppDelegate.m */,
 				E2DFB37616E1B54E0092C852 /* MasterViewController.h */,
 				E2DFB37716E1B54E0092C852 /* MasterViewController.m */,
+				E2DFB37C16E1B54F0092C852 /* MasterViewController.xib */,
 				E2DFB37916E1B54E0092C852 /* DetailViewController.h */,
 				E2DFB37A16E1B54F0092C852 /* DetailViewController.m */,
-				E2DFB37C16E1B54F0092C852 /* MasterViewController.xib */,
 				E2DFB37F16E1B54F0092C852 /* DetailViewController.xib */,
 				E2DFB36516E1B54E0092C852 /* Supporting Files */,
 			);
