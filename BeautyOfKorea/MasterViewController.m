@@ -61,7 +61,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return 6 ;
 }
 
 // Customize the appearance of table view cells.
@@ -72,9 +72,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
+    NSString* oImgName = [ NSString stringWithFormat:@"mainMenu%d", indexPath.row+1 ] ;
+    cell.imageView.image = [ UIImage imageNamed:oImgName ] ;
 
     NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [object description];

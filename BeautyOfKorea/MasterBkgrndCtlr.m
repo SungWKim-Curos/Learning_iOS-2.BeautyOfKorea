@@ -8,7 +8,13 @@
 
 #import "MasterBkgrndCtlr.h"
 
+#import "MasterViewController.h"
+
+
+
 @interface MasterBkgrndCtlr ()
+
+@property (strong, nonatomic) IBOutlet MasterViewController *tblVwCtlr;
 
 @end
 
@@ -27,6 +33,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UITableView* oTblVw = _tblVwCtlr.tableView ;
+    [ self.view addSubview:oTblVw ] ;
 }
 
 - (void)didReceiveMemoryWarning
