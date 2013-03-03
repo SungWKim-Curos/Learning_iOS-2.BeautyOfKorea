@@ -23,6 +23,7 @@
 
     UIViewController* oVwCtlr = [ [MasterBkgrndCtlr alloc] initWithNibName:@"MasterBkgrndCtlr" bundle:nil ] ;
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:oVwCtlr];
+    self.navigationController.navigationBarHidden = YES ;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
