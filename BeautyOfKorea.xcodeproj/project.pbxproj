@@ -20,6 +20,8 @@
 		E2DFB37B16E1B54F0092C852 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFB37A16E1B54F0092C852 /* DetailViewController.m */; };
 		E2DFB37E16E1B54F0092C852 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DFB37C16E1B54F0092C852 /* MasterViewController.xib */; };
 		E2DFB38116E1B54F0092C852 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DFB37F16E1B54F0092C852 /* DetailViewController.xib */; };
+		E2FA9C6B16E344D500811806 /* MasterBkgrndCtlr.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FA9C6A16E344D500811806 /* MasterBkgrndCtlr.m */; };
+		E2FA9C6E16E3451E00811806 /* MasterBkgrndCtlr.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2FA9C6D16E3451E00811806 /* MasterBkgrndCtlr.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		E2DFB37A16E1B54F0092C852 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2DFB37D16E1B54F0092C852 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		E2DFB38016E1B54F0092C852 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		E2FA9C6916E344D500811806 /* MasterBkgrndCtlr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterBkgrndCtlr.h; sourceTree = "<group>"; };
+		E2FA9C6A16E344D500811806 /* MasterBkgrndCtlr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterBkgrndCtlr.m; sourceTree = "<group>"; };
+		E2FA9C6D16E3451E00811806 /* MasterBkgrndCtlr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterBkgrndCtlr.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,9 @@
 				E2DFB37616E1B54E0092C852 /* MasterViewController.h */,
 				E2DFB37716E1B54E0092C852 /* MasterViewController.m */,
 				E2DFB37C16E1B54F0092C852 /* MasterViewController.xib */,
+				E2FA9C6916E344D500811806 /* MasterBkgrndCtlr.h */,
+				E2FA9C6A16E344D500811806 /* MasterBkgrndCtlr.m */,
+				E2FA9C6D16E3451E00811806 /* MasterBkgrndCtlr.xib */,
 				E2DFB37916E1B54E0092C852 /* DetailViewController.h */,
 				E2DFB37A16E1B54F0092C852 /* DetailViewController.m */,
 				E2DFB37F16E1B54F0092C852 /* DetailViewController.xib */,
@@ -172,6 +180,7 @@
 				E2DFB37516E1B54E0092C852 /* Default-568h@2x.png in Resources */,
 				E2DFB37E16E1B54F0092C852 /* MasterViewController.xib in Resources */,
 				E2DFB38116E1B54F0092C852 /* DetailViewController.xib in Resources */,
+				E2FA9C6E16E3451E00811806 /* MasterBkgrndCtlr.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +195,7 @@
 				E2DFB36F16E1B54E0092C852 /* AppDelegate.m in Sources */,
 				E2DFB37816E1B54E0092C852 /* MasterViewController.m in Sources */,
 				E2DFB37B16E1B54F0092C852 /* DetailViewController.m in Sources */,
+				E2FA9C6B16E344D500811806 /* MasterBkgrndCtlr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +320,7 @@
 				E2DFB38616E1B54F0092C852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
