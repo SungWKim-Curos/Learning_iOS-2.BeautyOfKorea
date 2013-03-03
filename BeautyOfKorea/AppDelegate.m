@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 curos. All rights reserved.
 //
 
+#import "Project.h"
+
 #import "AppDelegate.h"
 
 #import "MasterBkgrndCtlr.h"
@@ -14,7 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    const CGRect bounds = [ UIScreen mainScreen ].bounds ;
+    TakeScreenSize( &bounds.size ) ;
+    self.window = [[UIWindow alloc] initWithFrame:bounds];
     // Override point for customization after application launch.
 
     UIViewController* oVwCtlr = [ [MasterBkgrndCtlr alloc] initWithNibName:@"MasterBkgrndCtlr" bundle:nil ] ;

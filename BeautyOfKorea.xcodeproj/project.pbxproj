@@ -22,6 +22,7 @@
 		E2DFB38116E1B54F0092C852 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DFB37F16E1B54F0092C852 /* DetailViewController.xib */; };
 		E2FA9C6B16E344D500811806 /* MasterBkgrndCtlr.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FA9C6A16E344D500811806 /* MasterBkgrndCtlr.m */; };
 		E2FA9C6E16E3451E00811806 /* MasterBkgrndCtlr.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2FA9C6D16E3451E00811806 /* MasterBkgrndCtlr.xib */; };
+		E2FA9C9A16E358FC00811806 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FA9C9916E358FC00811806 /* Project.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		E2FA9C6916E344D500811806 /* MasterBkgrndCtlr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterBkgrndCtlr.h; sourceTree = "<group>"; };
 		E2FA9C6A16E344D500811806 /* MasterBkgrndCtlr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterBkgrndCtlr.m; sourceTree = "<group>"; };
 		E2FA9C6D16E3451E00811806 /* MasterBkgrndCtlr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterBkgrndCtlr.xib; sourceTree = "<group>"; };
+		E2FA9C9816E358FC00811806 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		E2FA9C9916E358FC00811806 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				E2DFB37916E1B54E0092C852 /* DetailViewController.h */,
 				E2DFB37A16E1B54F0092C852 /* DetailViewController.m */,
 				E2DFB37F16E1B54F0092C852 /* DetailViewController.xib */,
+				E2FA9C9816E358FC00811806 /* Project.h */,
+				E2FA9C9916E358FC00811806 /* Project.m */,
 				E2DFB36516E1B54E0092C852 /* Supporting Files */,
 			);
 			path = BeautyOfKorea;
@@ -196,6 +201,7 @@
 				E2DFB37816E1B54E0092C852 /* MasterViewController.m in Sources */,
 				E2DFB37B16E1B54F0092C852 /* DetailViewController.m in Sources */,
 				E2FA9C6B16E344D500811806 /* MasterBkgrndCtlr.m in Sources */,
+				E2FA9C9A16E358FC00811806 /* Project.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
