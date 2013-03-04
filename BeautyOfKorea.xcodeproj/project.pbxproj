@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E283993F16E4F5C1003419F3 /* contentBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E283993D16E4F5C1003419F3 /* contentBG.png */; };
+		E283994016E4F5C1003419F3 /* contentBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283993E16E4F5C1003419F3 /* contentBG@2x.png */; };
+		E283994416E4F5DA003419F3 /* btnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = E283994216E4F5DA003419F3 /* btnBack.png */; };
+		E283994516E4F5DA003419F3 /* btnBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283994316E4F5DA003419F3 /* btnBack@2x.png */; };
 		E2DFB35F16E1B54E0092C852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DFB35E16E1B54E0092C852 /* UIKit.framework */; };
 		E2DFB36116E1B54E0092C852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DFB36016E1B54E0092C852 /* Foundation.framework */; };
 		E2DFB36316E1B54E0092C852 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DFB36216E1B54E0092C852 /* CoreGraphics.framework */; };
@@ -42,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E283993D16E4F5C1003419F3 /* contentBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contentBG.png; sourceTree = "<group>"; };
+		E283993E16E4F5C1003419F3 /* contentBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contentBG@2x.png"; sourceTree = "<group>"; };
+		E283994216E4F5DA003419F3 /* btnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBack.png; sourceTree = "<group>"; };
+		E283994316E4F5DA003419F3 /* btnBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnBack@2x.png"; sourceTree = "<group>"; };
 		E2DFB35A16E1B54E0092C852 /* BeautyOfKorea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyOfKorea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DFB35E16E1B54E0092C852 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2DFB36016E1B54E0092C852 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -164,6 +172,10 @@
 		E2FA9C9C16E35A7200811806 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E283993D16E4F5C1003419F3 /* contentBG.png */,
+				E283993E16E4F5C1003419F3 /* contentBG@2x.png */,
+				E283994216E4F5DA003419F3 /* btnBack.png */,
+				E283994316E4F5DA003419F3 /* btnBack@2x.png */,
 				E2FA9CB516E35BFE00811806 /* mainBG.png */,
 				E2FA9CB616E35BFE00811806 /* mainBG@2x.png */,
 				E2FA9C9D16E35AD300811806 /* mainMenu1.png */,
@@ -258,6 +270,10 @@
 				E2FA9CBA16E35BFE00811806 /* mainBG@2x.png in Resources */,
 				E2FA9CBB16E35BFE00811806 /* mainTitle.png in Resources */,
 				E2FA9CBC16E35BFE00811806 /* mainTitle@2x.png in Resources */,
+				E283993F16E4F5C1003419F3 /* contentBG.png in Resources */,
+				E283994016E4F5C1003419F3 /* contentBG@2x.png in Resources */,
+				E283994416E4F5DA003419F3 /* btnBack.png in Resources */,
+				E283994516E4F5DA003419F3 /* btnBack@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

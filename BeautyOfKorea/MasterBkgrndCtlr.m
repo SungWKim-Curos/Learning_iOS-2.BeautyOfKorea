@@ -44,6 +44,15 @@
     _tblVwCtlr.parent = self ;
 }
 
+
+
+-(void) viewWillAppear:(BOOL)a_animated
+{
+    [ _tblVwCtlr viewWillAppear:a_animated ] ;
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
