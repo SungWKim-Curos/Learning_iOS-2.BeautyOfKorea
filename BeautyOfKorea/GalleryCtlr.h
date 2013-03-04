@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface GalleryCtlr : UIViewController
+{
+@public
+    int m_iMenu ;
+}
 
 @end

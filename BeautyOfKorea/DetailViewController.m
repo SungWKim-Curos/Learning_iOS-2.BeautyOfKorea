@@ -86,6 +86,7 @@ static NSString* const IMAGE_NAMES[] =
 -(IBAction) photosDidTouch:(UIButton*)a_oSender
 {
     GalleryCtlr* oGalCtlr = [ [GalleryCtlr alloc] initWithNibName:@"GalleryCtlr" bundle:nil ] ;
+    oGalCtlr->m_iMenu = m_iMenu ;
     [ super.navigationController pushViewController:oGalCtlr animated:YES ] ;
 }
 

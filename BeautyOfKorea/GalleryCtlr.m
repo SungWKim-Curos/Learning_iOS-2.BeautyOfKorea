@@ -9,8 +9,16 @@
 #import "GalleryCtlr.h"
 
 @interface GalleryCtlr ()
-
+@property (weak, nonatomic) IBOutlet UIScrollView *contentView;
 @end
+
+
+
+const int iGALLERY_PHOTOS = 20 ;
+const float fSCROLL_WIDTH = 310.0 ;
+const float fSCROLL_HEIGHT = 466.0 ;
+
+
 
 @implementation GalleryCtlr
 
@@ -27,6 +35,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    float fXPos = 0.0 ;
+    
+    for( int i=1 ; i<=iGALLERY_PHOTOS ; ++i )
+    {
+        NSString* oName = [ NSString stringWithFormat:@"photos_%d_%02d.JPG", m_iMenu+1, i ] ;
+        UIImage* oImg = [ UIImage imageNamed:oName ] ;
+        UIImageView* oImgVw = [ [UIImageView alloc] initWithImage:oImg ] ;
+        oImgVw.frame = CGRectMake( fXPos, 0, fSCROLL_WIDTH, fSCROLL_HEIGHT ) ;
+        [ _contentView addSubview:oImgVw ] ;
+        fXPos += fSCROLL_WIDTH ;        
+    }
+    
+    _contentView.contentSize = CGSizeMake( fXPos, fSCROLL_HEIGHT ) ;
 }
 
 - (void)didReceiveMemoryWarning
