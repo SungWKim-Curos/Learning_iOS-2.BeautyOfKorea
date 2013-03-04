@@ -48,6 +48,7 @@
 
 -(void) viewWillAppear:(BOOL)a_animated
 {
+    [ super viewWillAppear:a_animated ] ;
     [ _tblVwCtlr viewWillAppear:a_animated ] ;
 }
 

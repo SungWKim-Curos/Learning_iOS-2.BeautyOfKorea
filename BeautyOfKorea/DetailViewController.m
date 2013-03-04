@@ -9,7 +9,22 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *contentScrollVw;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
+
+
+
+static NSString* const IMAGE_NAMES[] =
+{
+    @"introByungSan",
+    @"introBulguksa",
+    @"introBusoksa",
+    @"introChumsongdae",
+    @"introAndong"
+};
+
+
 
 @implementation DetailViewController
 
@@ -19,6 +34,25 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+
+-(void)viewWillAppear:(BOOL)a_animated
+{
+    [ super viewWillAppear:a_animated ] ;
+    
+    if( 0<=m_iMenu && m_iMenu<5 )
+    {
+        UIImage* oImg = [ UIImage imageNamed:IMAGE_NAMES[m_iMenu] ] ;
+        const CGSize size = oImg.size ;
+        _imageView.frame = CGRectMake( 0, 0, size.width, size.height ) ;
+        _imageView.image = oImg ;
+        _contentScrollVw.contentSize = size ;
+        _contentScrollVw.contentOffset = CGPointMake(0,0) ;
+    }
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

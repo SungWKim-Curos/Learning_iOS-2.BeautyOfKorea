@@ -122,6 +122,7 @@
     if (!self.detailViewController) {
         self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     }
+    _detailViewController->m_iMenu = indexPath.row ;
     [self.parent.navigationController pushViewController:self.detailViewController animated:YES];
 }
 
