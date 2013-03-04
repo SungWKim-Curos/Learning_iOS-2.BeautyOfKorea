@@ -35,6 +35,10 @@
 	// Do any additional setup after loading the view.
     
     UITableView* oTblVw = _tblVwCtlr.tableView ;
+    CGRect frame = _tblVwCtlr.tableView.frame ;
+    frame.origin.x = 66 ;
+    frame.origin.y = 150 ;
+    _tblVwCtlr.tableView.frame = frame ;
     [ self.view addSubview:oTblVw ] ;
 }
 
