@@ -8,6 +8,11 @@
 
 #import "DetailViewController.h"
 
+// Relevant Headers
+#import "GalleryCtlr.h"
+
+
+
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollVw;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -75,5 +80,14 @@ static NSString* const IMAGE_NAMES[] =
 {
     [ self.navigationController popToRootViewControllerAnimated:YES] ;
 }
+
+
+
+-(IBAction) photosDidTouch:(UIButton*)a_oSender
+{
+    GalleryCtlr* oGalCtlr = [ [GalleryCtlr alloc] initWithNibName:@"GalleryCtlr" bundle:nil ] ;
+    [ super.navigationController pushViewController:oGalCtlr animated:YES ] ;
+}
+
 
 @end

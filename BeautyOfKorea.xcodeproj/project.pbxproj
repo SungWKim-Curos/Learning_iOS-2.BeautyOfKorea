@@ -21,6 +21,10 @@
 		E283995B16E4FC59003419F3 /* introByungsan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283995116E4FC59003419F3 /* introByungsan@2x.png */; };
 		E283995C16E4FC59003419F3 /* introChumsongdae.png in Resources */ = {isa = PBXBuildFile; fileRef = E283995216E4FC59003419F3 /* introChumsongdae.png */; };
 		E283995D16E4FC59003419F3 /* introChumsongdae@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283995316E4FC59003419F3 /* introChumsongdae@2x.png */; };
+		E283997116E50AB4003419F3 /* GalleryCtlr.m in Sources */ = {isa = PBXBuildFile; fileRef = E283996F16E50AB4003419F3 /* GalleryCtlr.m */; };
+		E283997216E50AB4003419F3 /* GalleryCtlr.xib in Resources */ = {isa = PBXBuildFile; fileRef = E283997016E50AB4003419F3 /* GalleryCtlr.xib */; };
+		E283997616E50B1A003419F3 /* btnPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = E283997416E50B1A003419F3 /* btnPhotos.png */; };
+		E283997716E50B1A003419F3 /* btnPhotos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283997516E50B1A003419F3 /* btnPhotos@2x.png */; };
 		E2DFB35F16E1B54E0092C852 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DFB35E16E1B54E0092C852 /* UIKit.framework */; };
 		E2DFB36116E1B54E0092C852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DFB36016E1B54E0092C852 /* Foundation.framework */; };
 		E2DFB36316E1B54E0092C852 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DFB36216E1B54E0092C852 /* CoreGraphics.framework */; };
@@ -70,6 +74,11 @@
 		E283995116E4FC59003419F3 /* introByungsan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "introByungsan@2x.png"; sourceTree = "<group>"; };
 		E283995216E4FC59003419F3 /* introChumsongdae.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = introChumsongdae.png; sourceTree = "<group>"; };
 		E283995316E4FC59003419F3 /* introChumsongdae@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "introChumsongdae@2x.png"; sourceTree = "<group>"; };
+		E283996E16E50AB4003419F3 /* GalleryCtlr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCtlr.h; sourceTree = "<group>"; };
+		E283996F16E50AB4003419F3 /* GalleryCtlr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCtlr.m; sourceTree = "<group>"; };
+		E283997016E50AB4003419F3 /* GalleryCtlr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryCtlr.xib; sourceTree = "<group>"; };
+		E283997416E50B1A003419F3 /* btnPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPhotos.png; sourceTree = "<group>"; };
+		E283997516E50B1A003419F3 /* btnPhotos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPhotos@2x.png"; sourceTree = "<group>"; };
 		E2DFB35A16E1B54E0092C852 /* BeautyOfKorea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyOfKorea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DFB35E16E1B54E0092C852 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2DFB36016E1B54E0092C852 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -168,6 +177,9 @@
 				E2DFB37916E1B54E0092C852 /* DetailViewController.h */,
 				E2DFB37A16E1B54F0092C852 /* DetailViewController.m */,
 				E2DFB37F16E1B54F0092C852 /* DetailViewController.xib */,
+				E283996E16E50AB4003419F3 /* GalleryCtlr.h */,
+				E283996F16E50AB4003419F3 /* GalleryCtlr.m */,
+				E283997016E50AB4003419F3 /* GalleryCtlr.xib */,
 				E2FA9C9816E358FC00811806 /* Project.h */,
 				E2FA9C9916E358FC00811806 /* Project.m */,
 				E2DFB36516E1B54E0092C852 /* Supporting Files */,
@@ -206,6 +218,8 @@
 				E283993E16E4F5C1003419F3 /* contentBG@2x.png */,
 				E283994216E4F5DA003419F3 /* btnBack.png */,
 				E283994316E4F5DA003419F3 /* btnBack@2x.png */,
+				E283997416E50B1A003419F3 /* btnPhotos.png */,
+				E283997516E50B1A003419F3 /* btnPhotos@2x.png */,
 				E2FA9CB516E35BFE00811806 /* mainBG.png */,
 				E2FA9CB616E35BFE00811806 /* mainBG@2x.png */,
 				E2FA9C9D16E35AD300811806 /* mainMenu1.png */,
@@ -314,6 +328,9 @@
 				E283995B16E4FC59003419F3 /* introByungsan@2x.png in Resources */,
 				E283995C16E4FC59003419F3 /* introChumsongdae.png in Resources */,
 				E283995D16E4FC59003419F3 /* introChumsongdae@2x.png in Resources */,
+				E283997216E50AB4003419F3 /* GalleryCtlr.xib in Resources */,
+				E283997616E50B1A003419F3 /* btnPhotos.png in Resources */,
+				E283997716E50B1A003419F3 /* btnPhotos@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +347,7 @@
 				E2DFB37B16E1B54F0092C852 /* DetailViewController.m in Sources */,
 				E2FA9C6B16E344D500811806 /* MasterBkgrndCtlr.m in Sources */,
 				E2FA9C9A16E358FC00811806 /* Project.m in Sources */,
+				E283997116E50AB4003419F3 /* GalleryCtlr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
