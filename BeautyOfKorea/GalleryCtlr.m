@@ -35,4 +35,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+-(IBAction) backDidTouch:(UIButton*)a_oSender
+{
+    [ super.navigationController popViewControllerAnimated:YES ] ;
+}
+
+
 @end
