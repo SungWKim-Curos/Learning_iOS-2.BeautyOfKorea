@@ -40,6 +40,8 @@
     frame.origin.y = 150 ;
     _tblVwCtlr.tableView.frame = frame ;
     [ self.view addSubview:oTblVw ] ;
+    
+    _tblVwCtlr.parent = self ;
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MasterBkgrndCtlr ;
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
 
+@property (weak,nonatomic) MasterBkgrndCtlr* parent ;
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
 @end

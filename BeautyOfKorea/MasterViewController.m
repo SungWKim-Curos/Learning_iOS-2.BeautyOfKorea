@@ -8,6 +8,8 @@
 
 #import "MasterViewController.h"
 
+// Relevant Headers
+#import "MasterBkgrndCtlr.h"
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -122,7 +124,7 @@
     }
     NSDate *object = _objects[indexPath.row];
     self.detailViewController.detailItem = object;
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
+    [self.parent.navigationController pushViewController:self.detailViewController animated:YES];
 }
 
 @end
