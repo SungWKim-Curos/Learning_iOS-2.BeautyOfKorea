@@ -9,7 +9,7 @@
 #import "MapCtlr.h"
 
 @interface MapCtlr ()
-
+@property (weak, nonatomic) IBOutlet MKMapView *mapVw;
 @end
 
 @implementation MapCtlr

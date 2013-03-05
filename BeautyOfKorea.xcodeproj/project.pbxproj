@@ -25,6 +25,7 @@
 		E283997216E50AB4003419F3 /* GalleryCtlr.xib in Resources */ = {isa = PBXBuildFile; fileRef = E283997016E50AB4003419F3 /* GalleryCtlr.xib */; };
 		E283997616E50B1A003419F3 /* btnPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = E283997416E50B1A003419F3 /* btnPhotos.png */; };
 		E283997716E50B1A003419F3 /* btnPhotos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283997516E50B1A003419F3 /* btnPhotos@2x.png */; };
+		E2B3CDB716E6179B009BA4D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B3CDB616E6179B009BA4D3 /* MapKit.framework */; };
 		E2D94F8216E5519F0028589B /* photos_1_01.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2D94EB916E5519F0028589B /* photos_1_01.JPG */; };
 		E2D94F8316E5519F0028589B /* photos_1_01@2x.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2D94EBA16E5519F0028589B /* photos_1_01@2x.JPG */; };
 		E2D94F8416E5519F0028589B /* photos_1_02.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2D94EBB16E5519F0028589B /* photos_1_02.JPG */; };
@@ -281,6 +282,7 @@
 		E283997016E50AB4003419F3 /* GalleryCtlr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryCtlr.xib; sourceTree = "<group>"; };
 		E283997416E50B1A003419F3 /* btnPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPhotos.png; sourceTree = "<group>"; };
 		E283997516E50B1A003419F3 /* btnPhotos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPhotos@2x.png"; sourceTree = "<group>"; };
+		E2B3CDB616E6179B009BA4D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E2D94EB916E5519F0028589B /* photos_1_01.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photos_1_01.JPG; sourceTree = "<group>"; };
 		E2D94EBA16E5519F0028589B /* photos_1_01@2x.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photos_1_01@2x.JPG"; sourceTree = "<group>"; };
 		E2D94EBB16E5519F0028589B /* photos_1_02.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photos_1_02.JPG; sourceTree = "<group>"; };
@@ -531,6 +533,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B3CDB716E6179B009BA4D3 /* MapKit.framework in Frameworks */,
 				E2DFB35F16E1B54E0092C852 /* UIKit.framework in Frameworks */,
 				E2DFB36116E1B54E0092C852 /* Foundation.framework in Frameworks */,
 				E2DFB36316E1B54E0092C852 /* CoreGraphics.framework in Frameworks */,
@@ -768,6 +771,7 @@
 		E2DFB35D16E1B54E0092C852 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2B3CDB616E6179B009BA4D3 /* MapKit.framework */,
 				E2DFB35E16E1B54E0092C852 /* UIKit.framework */,
 				E2DFB36016E1B54E0092C852 /* Foundation.framework */,
 				E2DFB36216E1B54E0092C852 /* CoreGraphics.framework */,
