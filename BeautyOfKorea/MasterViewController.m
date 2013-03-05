@@ -11,6 +11,9 @@
 // Relevant Headers
 #import "MasterBkgrndCtlr.h"
 #import "DetailViewController.h"
+#import "MapCtlr.h"
+
+
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -119,6 +122,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if( 5 == indexPath.row )
+    {
+        MapCtlr* oMapCtlr = [ [MapCtlr alloc] initWithNibName:@"MapCtlr" bundle:nil ] ;
+        [ _parent.navigationController pushViewController:oMapCtlr animated:TRUE ] ;
+        return ;
+    }
+    
     if (!self.detailViewController) {
         self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     }
