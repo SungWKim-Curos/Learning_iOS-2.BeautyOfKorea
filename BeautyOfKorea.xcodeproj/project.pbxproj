@@ -27,6 +27,7 @@
 		E283997716E50B1A003419F3 /* btnPhotos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E283997516E50B1A003419F3 /* btnPhotos@2x.png */; };
 		E2B3CDB716E6179B009BA4D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B3CDB616E6179B009BA4D3 /* MapKit.framework */; };
 		E2B3CDBB16E61C50009BA4D3 /* LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3CDBA16E61C50009BA4D3 /* LocationAnnotation.m */; };
+		E2B3CDD716E636EE009BA4D3 /* annotationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B3CDD616E636EE009BA4D3 /* annotationIcon.png */; };
 		E2D94F8216E5519F0028589B /* photos_1_01.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2D94EB916E5519F0028589B /* photos_1_01.JPG */; };
 		E2D94F8316E5519F0028589B /* photos_1_01@2x.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2D94EBA16E5519F0028589B /* photos_1_01@2x.JPG */; };
 		E2D94F8416E5519F0028589B /* photos_1_02.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2D94EBB16E5519F0028589B /* photos_1_02.JPG */; };
@@ -286,6 +287,7 @@
 		E2B3CDB616E6179B009BA4D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E2B3CDB916E61C50009BA4D3 /* LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationAnnotation.h; sourceTree = "<group>"; };
 		E2B3CDBA16E61C50009BA4D3 /* LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationAnnotation.m; sourceTree = "<group>"; };
+		E2B3CDD616E636EE009BA4D3 /* annotationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotationIcon.png; sourceTree = "<group>"; };
 		E2D94EB916E5519F0028589B /* photos_1_01.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photos_1_01.JPG; sourceTree = "<group>"; };
 		E2D94EBA16E5519F0028589B /* photos_1_01@2x.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photos_1_01@2x.JPG"; sourceTree = "<group>"; };
 		E2D94EBB16E5519F0028589B /* photos_1_02.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photos_1_02.JPG; sourceTree = "<group>"; };
@@ -829,6 +831,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D94EB716E5519F0028589B /* gallery */,
+				E2B3CDD616E636EE009BA4D3 /* annotationIcon.png */,
 				E283994A16E4FC59003419F3 /* introAndong.png */,
 				E283994B16E4FC59003419F3 /* introAndong@2x.png */,
 				E283994C16E4FC59003419F3 /* introBulguksa.png */,
@@ -1157,6 +1160,7 @@
 				E2D9504816E5519F0028589B /* photos_5_20.JPG in Resources */,
 				E2D9504916E5519F0028589B /* photos_5_20@2x.JPG in Resources */,
 				E2F90A0B16E60D4E0065A78D /* MapCtlr.xib in Resources */,
+				E2B3CDD716E636EE009BA4D3 /* annotationIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

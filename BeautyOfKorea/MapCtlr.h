@@ -11,6 +11,6 @@
 
 
 
-@interface MapCtlr : UIViewController
+@interface MapCtlr : UIViewController < MKMapViewDelegate >
 
 @end

@@ -78,7 +78,7 @@ static NSString* const IMAGE_NAMES[] =
 
 - (IBAction)BackDidTouch:(id)sender
 {
-    [ self.navigationController popToRootViewControllerAnimated:YES] ;
+    [ self.navigationController popViewControllerAnimated:YES] ;
 }
 
 

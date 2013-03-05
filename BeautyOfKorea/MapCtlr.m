@@ -10,23 +10,24 @@
 
 // Relevant Headers
 #import "LocationAnnotation.h"
+#import "DetailViewController.h"
 
 
 
 static const CLLocationCoordinate2D LOC_COORD[] = {
-    { 35.78995,  129.331838 },
     { 36.634187, 128.68585  },
-    { 36.538778, 128.519547 },
+    { 35.78995,  129.331838 },
     { 36.998963, 128.687453 },
     { 35.835089, 129.218992 },
+    { 36.538778, 128.519547 },
 };
 
 static NSString* const TITLE[] = {
-    @"불국사(佛國寺)", @"병산서원(屛山書院)", @"하회마을", @"부석사(浮石寺)", @"첨성대(瞻星臺)"
+    @"병산서원(屛山書院)", @"불국사(佛國寺)", @"부석사(浮石寺)", @"첨성대(瞻星臺)", @"하회마을"
 };
 
 static NSString* const SUBTITLE[] = {
-    @"Bulguksa Temple", @"Byungsan Seowon", @"Hahoe Village", @"Busoksa Temple", @"Cheomseongdae"
+    @"Byungsan Seowon", @"Bulguksa Temple", @"Busoksa Temple", @"Cheomseongdae", @"Hahoe Village"
 };
 
 
@@ -63,7 +64,7 @@ static NSString* const SUBTITLE[] = {
     MKCoordinateRegion reg ;
     reg.span.latitudeDelta = 1 ;
     reg.span.longitudeDelta = 1 ;
-    reg.center = LOC_COORD[1] ;
+    reg.center = LOC_COORD[0] ;
     [ _mapVw setRegion:reg animated:FALSE ] ;
     [ _mapVw regionThatFits:reg ] ;
 }
@@ -72,6 +73,41 @@ static NSString* const SUBTITLE[] = {
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+-(MKAnnotationView*) mapView:(MKMapView*)a_oMapVw viewForAnnotation:(id<MKAnnotation>)a_oAnnotation
+{
+    UIButton* oBtn = [ UIButton buttonWithType:UIButtonTypeDetailDisclosure ] ;
+    oBtn.frame = CGRectMake( 0, 0, 23, 23 ) ;
+    oBtn.contentVerticalAlignment   = UIControlContentVerticalAlignmentCenter ;
+    oBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter ;
+    
+    MKAnnotationView* oVw = [ [MKAnnotationView alloc] initWithAnnotation:a_oAnnotation reuseIdentifier:@"MyAnnotVw" ] ;
+    oVw.rightCalloutAccessoryView = oBtn ;
+    oVw.canShowCallout = YES ;
+    oVw.image = [ UIImage imageNamed:@"annotationIcon" ] ;    
+    return oVw ;
+}
+
+
+
+-(void) mapView:(MKMapView*)a_oMapVw annotationView:(MKAnnotationView*)a_oAnnotVw calloutAccessoryControlTapped:(UIControl*)a_oCtl
+{
+    NSString* oTitle = a_oAnnotVw.annotation.title ;
+    int iMenu = 0 ;
+    for( ; iMenu<5 ; ++iMenu )
+    {
+        if( [ oTitle compare:TITLE[iMenu] ] == NSOrderedSame  )
+            break ;
+    }
+    if( iMenu >= 5 )
+        return ;
+    
+    DetailViewController* oVwCtlr = [ [DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil ] ;
+    oVwCtlr->m_iMenu = iMenu ;
+    [ super.navigationController pushViewController:oVwCtlr animated:YES ] ;
 }
 
 
