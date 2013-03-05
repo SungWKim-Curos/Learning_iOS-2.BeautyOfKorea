@@ -82,4 +82,13 @@ static NSString* const SUBTITLE[] = {
 }
 
 
+
+-(IBAction) mapTypeDidChange:(UISegmentedControl*)a_oSegSender
+{
+    const static MKMapType MAP_TYPE[3] = { MKMapTypeStandard, MKMapTypeSatellite, MKMapTypeHybrid } ;
+    
+    _mapVw.mapType = MAP_TYPE[a_oSegSender.selectedSegmentIndex] ;
+}
+
+
 @end
